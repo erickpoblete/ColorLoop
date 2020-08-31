@@ -1,3 +1,35 @@
+/* This is to change global text */
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+/* body color */
+body{
+  background-color: rgba(250, 249, 236, 0.993);
+}
+
+/* Title style */
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4rem;
+  animation-name: title;
+  animation-duration: 1250ms;
+  animation-iteration-count: infinite;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
 
 /* This is for each color box and animation names */
 
@@ -101,6 +133,14 @@
 
 /* this is the keyframes for all the colors */
 
+  @keyframes title{
+    0% {color:rgb(19, 228, 158);}
+     25% {color: rgb(236, 54, 93);}
+     50% {color: rgb(110, 88, 238);}
+     75% {color: rgb(238, 204, 55);}
+     100% {color: rgb(19, 228, 158);}
+  }
+
   @keyframes firstBox{
      0% {background-color:lightsteelblue;}
      25% {background-color: rgb(136, 173, 221);}
@@ -133,12 +173,4 @@
     100% {background-color:lightseagreen;}
  }
 
-/* This is to change global text */
- .text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 3rem;
-    color: whitesmoke;
- }
+
